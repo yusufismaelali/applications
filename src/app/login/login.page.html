@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Welcome to Darwiish graphic design</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <ion-card-header>
+    <img src="assets/logo.png" alt="Darwiish-logo"> 
+    <ion-card-subtitle></ion-card-subtitle>
+    <ion-card-title>enter here your name and password</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item>
+      
+      <ion-input placeholder="username"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input placeholder="password" type="password"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button expand="block" (click)="logMeIn()">login</ion-button>
+  </ion-card-content>
+  </ion-card>
+</ion-content>
