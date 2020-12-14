@@ -1,19 +1,41 @@
 <ion-header  [translucent]="true">
 
   <ion-toolbar>
-    <ion-title style="background-color:rgb(235, 68, 90)">
+    <ion-title>
       Home
     </ion-title>
   </ion-toolbar >
-  <br>
-  <ionic-title>
+  <ion-title>
     <ion-searchbar animated></ion-searchbar>
-  </ionic-title>
+  </ion-title>
 </ion-header>
 
+ 
+  
+  <ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu">
+    <ion-header>
+      <ion-toolbar color="danger">
+        <ion-title>Main Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item href="/Home">Home</ion-item>
+        <ion-item href="/graduation" >Graduation</ion-item>
+        <ion-item href="/i" >ID cards</ion-item>
+        <ion-item href="/i">Panels</ion-item>
+        <ion-item href="/i">Logo's</ion-item>
+        <ion-item href="/i">Certificates</ion-item>
+        <ion-item href="/i">Marriage</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  
+  
+  <ion-router-outlet id="main"></ion-router-outlet>
+
 <ion-content [fullscreen]="true">
-
-
   <ion-card>
     <ion-card-header>
       <img src="assets/logo.png" alt="Darwiish-logo"> 
@@ -29,47 +51,40 @@
       <h1>Design clasifications</h1>
     </ion-text>
     
-    <!-- Item as a Button -->
-    <!-- <ion-item button (click)="buttonClick()">
+    
+    <ion-item color="danger">
       <ion-label>
-        Button Item
+       <ion-button style="font-size: large;" href="/graduation">graduation</ion-button>
       </ion-label>
     </ion-item>
-     -->
-    <!-- Item as an Anchor -->
-    <ion-item color="danger" href="https://www.google.com">
+    <ion-item color="danger">
       <ion-label>
-        Graduation Designs
+        <ion-button style="font-size: large;"  href="/i">ID-cards</ion-button>
       </ion-label>
     </ion-item>
-    <ion-item color="danger" href="https://www.google.com">
+    <ion-item color="danger">
       <ion-label>
-        ID-CARD designs
+        <ion-button style="font-size: large;"  href="/i">Panel Designs</ion-button>
       </ion-label>
     </ion-item>
-    <ion-item color="danger" href="https://www.ionicframework.com">
+    <ion-item color="danger">
       <ion-label>
-        panel designs
+        <ion-button style="font-size: large;"  href="/i">logo Designs</ion-button>
       </ion-label>
     </ion-item>
-    <ion-item color="danger" href="https://www.ionicframework.com">
+    <ion-item color="danger">
       <ion-label>
-        logo designs
+        <ion-button style="font-size: large;"  href="/i">graphic Designs</ion-button>
       </ion-label>
     </ion-item>
-    <ion-item color="danger" href="https://www.ionicframework.com">
+    <ion-item color="danger">
       <ion-label>
-        graphic designs
+        <ion-button style="font-size: large;"  href="/i">certificate Design</ion-button>
       </ion-label>
     </ion-item>
-    <ion-item color="danger" href="https://www.ionicframework.com">
+    <ion-item color="danger" >
       <ion-label>
-        certificate Designs
-      </ion-label>
-    </ion-item>
-    <ion-item color="danger" href="https://www.ionicframework.com">
-      <ion-label>
-        marriage designs
+        <ion-button style="font-size: large;" href="/i">Marriage Design</ion-button>
       </ion-label>
     </ion-item>
     
